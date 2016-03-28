@@ -19,11 +19,11 @@ public abstract class Fruit
 	{
 		this.averageWeight = averageWeight;
 	}
-	public ArrayList<String> getNames()
+	public ArrayList<String> getFruitNutrients()
 	{
 		return fruitNutrients;
 	}
-	public void setNames(ArrayList<String> names)
+	public void setFruitNutrients(ArrayList<String> names)
 	{
 		this.fruitNutrients = names;
 	}

@@ -7,17 +7,17 @@ public class Apple extends Fruit
 	public Apple()
 	{
 		this.setAverageWeight(0.33);
-		this.setFruitNutrients(getFruitNutrients());
+		this.setFruitNutrients(getAppleNutrients());
 		this.setTasty(true);
 	}
 	
-	private ArrayList<String> getFruitNutrients()
+	private ArrayList<String> getAppleNutrients()
 	{
 		ArrayList<String> nutrients = new ArrayList<String>();
 		
-		nutrients.add("");
-		nutrients.add("");
-		nutrients.add("");
+		nutrients.add("Sugars: 25g");
+		nutrients.add("Potassium 260mg");
+		nutrients.add("Dietary Fiber 5g");
 		
 		return nutrients;
 	}
