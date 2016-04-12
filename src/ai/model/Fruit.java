@@ -52,7 +52,21 @@ public abstract class Fruit implements Death, Comparable
 	{
 		int comparedValue = Integer.MIN_VALUE;
 		
-		
+		if(compared instanceof Death)
+		{
+			if(this.get**() < ((Death) compared).get**())
+			{
+				comparedValue = -1;
+			}
+			else if(this.get**() < ((Death) compared).get**())
+			{
+				comparedValue = 1;
+			}
+			else
+			{
+				comparedValue = 0;
+			}
+		}
 		
 		return comparedValue;
 	}
