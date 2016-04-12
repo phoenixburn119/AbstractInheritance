@@ -2,7 +2,7 @@ package ai.model;
 
 import java.util.ArrayList;
 
-public abstract class Fruit
+public abstract class Fruit implements Death, Comparable
 {
 	private double averageWeight;
 	private ArrayList<String> fruitNutrients;
@@ -36,4 +36,24 @@ public abstract class Fruit
 		this.isTasty = isTasty;
 	}
 	
+	public String toString()
+	{
+		String fruitDescription = "This is a Fruit object of Type " + this.getClass().getName() + 
+				" and has a average weight of " + getAverageWeight();
+		
+		return fruitDescription;
+	}
+	
+	/**
+	 * if this object is before or less than the compared object return a negative number. (generally -1)
+	 * if this object is after/greater than the compared object return positive. (generally 1)
+	 */
+	public int compareTo(Object compared)
+	{
+		int comparedValue = Integer.MIN_VALUE;
+		
+		
+		
+		return comparedValue;
+	}
 }
