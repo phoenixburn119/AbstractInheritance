@@ -21,7 +21,7 @@ public class AIFrame extends JFrame
 	{
 		this.setContentPane(basePanel);
 		this.setResizable(false);
-		this.setTitle("RPS-RPG");
+		this.setTitle("AI GUI");
 		this.setSize(600,420);
 		this.setVisible(true);
 	}

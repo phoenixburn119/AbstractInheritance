@@ -2,13 +2,11 @@ package ai.model;
 
 import java.util.ArrayList;
 
-public abstract class Fruit implements Death, Comparable
+public abstract class Fruit implements Death, Comparable<Object>
 {
 	private double averageWeight;
 	private ArrayList<String> fruitNutrients;
 	private boolean isTasty;
-	
-	
 	
 	
 	public double getAverageWeight()

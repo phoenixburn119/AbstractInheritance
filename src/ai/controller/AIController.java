@@ -11,17 +11,13 @@ import ai.view.AIFrame;
 
 public class AIController
 {
-	private Fruit Fruit;
 	private AIFrame baseFrame;
-	private ArrayList<Death> deathThings
-;	
-	public void start()
-	{
-		
-	}
+	private ArrayList<Death> deathThings;
 	
 	public AIController()
 	{
+		//Build all model components
+		this.deathThings = new ArrayList<Death>();
 		baseFrame = new AIFrame(this);
 		makeDeathList();
 	}
@@ -41,6 +37,11 @@ public class AIController
 		deathThings.add(new Apple());
 		deathThings.add(new Banana());
 		deathThings.add(new Orange());
+	}
+	
+	public void start()
+	{
+		
 	}
 	
 	private void swap(int firstLocation, int secondLocation)
@@ -90,6 +91,4 @@ public class AIController
 		
 		return position;
 	}
-	
-	
 }
